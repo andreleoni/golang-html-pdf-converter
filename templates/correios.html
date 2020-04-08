@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Correios label</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<h3>{{ .Title }}</h3>
+<p>{{.Description}}</p>
+<table>
+    <thead>
+    <tr>
+        <th>Tracking Code</th>
+        <th>Address</th>
+        <th>Contact</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{.TrackingCode}}</td>
+        <td>{{.Address}}</td>
+        <td>{{.Contact}}</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
