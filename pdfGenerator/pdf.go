@@ -51,7 +51,7 @@ func (r *RequestPdf) GeneratePDF(pdfPath string) ([]byte, error) {
 		panic(err1)
 	}
 
-	f, err := os.Open(labelFileName)
+	f, err := os.Open("temp/" + strconv.FormatInt(int64(t), 10) + "_label.html")
 	if f != nil {
 		defer f.Close()
 	}

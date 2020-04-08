@@ -11,3 +11,5 @@ It is a repository, integrating which one can offer HTML to PDF Conversion to th
 Install wkhtmltopdf using below command
   - ``sudo apt install wkhtmltopdf`` - for Ubuntu
   - ``brew install Caskroom/cask/wkhtmltopdf`` - For Mac
+
+Create a `temp` folder if getting errors.
